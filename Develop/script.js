@@ -1,14 +1,38 @@
 // Get a reference to the #add-employees-btn elemen
 
+
+
+// Get the add employee button
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-// button.addEventListener('click', function(){
-//   const addEmployeesBtn = prompt('firstname:');
-//   console.log('firstName');
-// });
+//creating a click listener for the add emplpoyee button
+addEmployeesBtn.addEventListener('click', function(){
+  // telling the function to keep going until line 18 is false or "cancel"
+    let keepgoing = true
+    do { 
+      //display the prompt to gather employee first name
+    let employeefirstname = prompt('firstName');
+    console.log(employeefirstname);
+    let employeelastname = prompt('lastName');
+    console.log(employeelastname)
+    let employeesalary = prompt('salary');
+    console.log(employeesalary)
+    //when continue is clicked, aka "true" the loop runs again with the "dywtc' prompt
+    keepgoing = confirm('do you want to continue');
+  } while (keepgoing);
+});
 
-firstName 
 
-// let unserinput = window.prompt("Enter first name:");
+
+
+
+
+
+
+
+
+
+/*
+let unserinput = window.prompt("Enter first name:");
 
 // console.log ('firstName');
 
@@ -36,7 +60,7 @@ const employee = {
 
 // const options = 
 
-// let firstName = window.prompt("Enter firstName:"); 
+let firstName = window.prompt("Enter firstName:"); 
 
 // firstName = firstName.prompt("firstname")
 
