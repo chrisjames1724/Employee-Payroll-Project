@@ -7,7 +7,8 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 //creating a click listener for the add emplpoyee button
 addEmployeesBtn.addEventListener('click', function(){
   // telling the function to keep going until line 18 is false or "cancel"
-    let keepgoing = true
+    let keepgoing = true;
+    let employeedata = []
     do { 
       //display the prompt to gather employee first name
     let employeefirstname = prompt('firstName');
@@ -16,9 +17,18 @@ addEmployeesBtn.addEventListener('click', function(){
     console.log(employeelastname)
     let employeesalary = prompt('salary');
     console.log(employeesalary)
+    //add collected employee info to a employee data array
+    let alldata = {
+      first:employeefirstname,
+      last:employeelastname,
+      salary:employeesalary
+    }
+    employeedata.push(alldata)
+    console.log(employeedata[employeedata.length - 1])
     //when continue is clicked, aka "true" the loop runs again with the "dywtc' prompt
     keepgoing = confirm('do you want to continue');
   } while (keepgoing);
+  console.log(employeedata);
 });
 
 
@@ -28,20 +38,6 @@ addEmployeesBtn.addEventListener('click', function(){
 
 
 
-
-
-
-/*
-let unserinput = window.prompt("Enter first name:");
-
-// console.log ('firstName');
-
-
-// let userinput = window.prompt("enter lastname")
-//  console.log ('lastName');
-
-//  let userinput = window.prompt("entersalary");
-//  console.log (salary);
 
 
 
