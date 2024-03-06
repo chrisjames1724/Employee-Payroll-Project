@@ -3,6 +3,7 @@
 In this project we were supposed to simulate an employee paroll tracker to view and manage employee payrool data which was given using a bit of starter code. We needed to modify the starter code using Javascript to create a responsive user interface with click functions initializing defined prompts. Throughout the project we learned to to collect data, store it, and use varying functions to find averages, random generate and alphabatize different emplpoyee date.
 
 ## Installation
+ https://chrisjames1724.github.io/Employee-Payroll-Project/
 
 ## Usage
 
@@ -10,21 +11,32 @@ When you open the website you will initially see the following page:
 ![alt text](<images/initial page.png>)
 
 To get started the user will click the blue "add employees" button. Once the button is pressed it will initiate a prompt to collect the employees first name as seen in the image below:
+
+
 ![alt text](<images/Collect First Name.png>)
 
 Once the Frist Name is entered, the user will be asked to push okay or cancel. Cancel will close the prompt and okay will then initiate the prompt to collect the last name of the employee as seen below:
+
+
 ![alt text](<images/Collect Last Name.png>)
 
 The user would then input the last name of the employee with another optipn to cancel out if they so choose. After entering the last name and clicking okay the final data collection proompt of salary will appear as seen below:
+
+
 ![alt text](<images/Enter a Salary.png>)
 
 As the only data points being collected were the "first name," "laat name," and "salary," the loop then comes to an end and presents the user with the question of "do you want to continue". This prompt is seen here below:
+
+
 ![alt text](<images/Continue or Cancel.png>)
 
 The user can press "ok" and enter all the data for as many employees as they like or they can press "cancel" which will then display all of the employee data that they had logged up to that point as seen below:
+
+
 ![alt text](<images/Employee data log.png>)
 
 Lastly, if one were to open the console they would see that there was a randomly selected winner below all of the other logged data. This is seen here below.
+
 
 ![alt text](<images/Random Winner!!.png>)
 
