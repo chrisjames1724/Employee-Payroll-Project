@@ -4,12 +4,15 @@ In this project we were supposed to simulate an employee paroll tracker to view 
 
 ## Installation
 
-
 ## Usage
+
+When you open the website you will initially see the following page:
+![alt text](<images/initial page.png>)
 
 ## Credits
 
 ## Licesne
+
 MIT License
 
 Copyright (c) [year] [fullname]
