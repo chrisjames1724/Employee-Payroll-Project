@@ -3,7 +3,7 @@
 // Get the add employee button
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 //creating a click listener for the add emplpoyee button
-addEmployeesBtn.addEventListener('click', function(){
+const collectEmployees = function(){
   // telling the function to keep going until line 18 is false or "cancel"
     let keepgoing = true;
     let employeedata = [];
@@ -17,8 +17,8 @@ addEmployeesBtn.addEventListener('click', function(){
     console.log(employeesalary)
     //add collected employee info to a employee data array
     let alldata = {
-      first:employeefirstname,
-      last:employeelastname,
+      firstName:employeefirstname,
+      lastName:employeelastname,
       salary:employeesalary
     }
     employeedata.push(alldata)
@@ -27,9 +27,8 @@ addEmployeesBtn.addEventListener('click', function(){
     keepgoing = confirm('do you want to continue');
   } while (keepgoing);
 
-  console.log(employeedata);
-  displayAverageSalary(employeedata)
-});
+  return employeedata;
+};
 
 
   const displayAverageSalary = function(employeedata) {
@@ -48,36 +47,13 @@ addEmployeesBtn.addEventListener('click', function(){
 
   }
 
-
-
-
-// Collect employee data
-const collectEmployees = function() {
-const firstName = prompt("first name")
- console.log(firstName);
-
   // TODO: Get user input to create and return an array of employee objects
-}
-const employee = {
-  firstName: 'firstName',
-  lastName: 'lastname',
-  salary: 'salary',
-};
 
-const options = 
-
-// let firstName = window.prompt("Enter firstName:"); 
-
-firstName = firstName.prompt("firstname")
-
-/*
-// Display the average salary
-const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
-}
 
 // Select a random employee
-const getRandomEmployee = function(employeesArray) {
+ const getRandomEmployee = function(employeesArray) {
+  var randomValue = Math.floor(employeesArray.length * Math.random())
+  console.log('Congratulations to',employeesArray[randomValue].firstName + " " +  employeesArray[randomValue].lastName, ', our random drawings winner!')
   // TODO: Select and display a random employee
 }
 
