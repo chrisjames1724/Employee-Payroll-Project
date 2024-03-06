@@ -1,14 +1,12 @@
 // Get a reference to the #add-employees-btn elemen
 
-
-
 // Get the add employee button
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 //creating a click listener for the add emplpoyee button
 addEmployeesBtn.addEventListener('click', function(){
   // telling the function to keep going until line 18 is false or "cancel"
     let keepgoing = true;
-    let employeedata = []
+    let employeedata = [];
     do { 
       //display the prompt to gather employee first name
     let employeefirstname = prompt('firstName');
@@ -28,15 +26,27 @@ addEmployeesBtn.addEventListener('click', function(){
     //when continue is clicked, aka "true" the loop runs again with the "dywtc' prompt
     keepgoing = confirm('do you want to continue');
   } while (keepgoing);
+
   console.log(employeedata);
+  displayAverageSalary(employeedata)
 });
 
 
+  const displayAverageSalary = function(employeedata) {
+    let sumemployeesalary = 0;
+       //defining the variables to store the sum of employee salaries to divide by the amount of employees
+    let numberofemployees = employeedata.length;
+    //add the employee salaries and dividing by the amount of employees
+     for(let employeecounter = 0; employeecounter < numberofemployees; employeecounter++) {
+        sumemployeesalary += Number(employeedata[employeecounter].salary)
+        //for loop going from 0 to the number of employees 
+     }
+     let average = (sumemployeesalary/ numberofemployees) 
+     console.log('The averge employee salary'+average);
+   
 
 
-
-
-
+  }
 
 
 
@@ -49,16 +59,16 @@ const firstName = prompt("first name")
   // TODO: Get user input to create and return an array of employee objects
 }
 const employee = {
-  firstName: firstName,
-  lastName: 0,
-  salary: 0 ,
+  firstName: 'firstName',
+  lastName: 'lastname',
+  salary: 'salary',
 };
 
-// const options = 
+const options = 
 
-let firstName = window.prompt("Enter firstName:"); 
+// let firstName = window.prompt("Enter firstName:"); 
 
-// firstName = firstName.prompt("firstname")
+firstName = firstName.prompt("firstname")
 
 /*
 // Display the average salary
